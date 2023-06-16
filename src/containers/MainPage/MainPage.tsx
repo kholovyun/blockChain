@@ -73,6 +73,7 @@ export const MainPage = () => {
         }
         
         <Modal show={showModal} close={closeModal}>
+                <button style={{width: "40px", borderRadius: "5px", marginLeft: "80%", backgroundColor: "gray"}} onClick={closeModal}>Х</button>
                 <h3>{formPick === "register" ? "Registration" : "Login"}</h3>
                 <Formik
                     initialValues={{
