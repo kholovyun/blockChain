@@ -1,0 +1,182 @@
+.main_page_container{
+    margin: 80px  20px;
+}
+.promo_block{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+}
+.promo_block_text{
+    max-width: 70%;
+    font-size: 76px;
+    line-height:95px;
+    font-weight: 500;
+}
+span {
+    font-weight: 900;
+}
+.controlls_block{
+    padding: 2%;
+}
+.controlls_text{
+    max-width: 35%;
+    font-size: 29px;
+    line-height: 35px;
+}
+.controlls_block_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 35%;
+    margin-top: 3em;
+}
+.controll_btn{
+    padding: 1em;
+    width: 11em;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid blue;
+    color: white;
+    font-size: 20px;
+}
+.controll_btn:hover {
+    background-color: blue;
+    border: none;
+}
+
+.form_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2em;
+}
+
+.login_input {
+    width: 100%;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    color: var(--black_blue);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border: none;
+    color: black;
+}
+
+.login_input:focus {
+    outline: none;
+    offset: inherit;
+}
+
+.error_text {
+    padding: 0.5rem;
+}
+
+.error_text {
+    max-width: 80%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--violet);
+    padding-top: 0.5rem;
+}
+
+.controll_btn_modal{
+    padding: 0.5em;
+    width: 6em;
+    border-radius: 20px;
+    background-color: rgb(48, 196, 222);
+    border: none;
+    color: rgb(111, 5, 76);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+    .error_text {
+        font-size: 0.6rem;
+    }
+
+    .label_text {
+        white-space: break-spaces;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .custom_option,
+    .login_input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .login_input {
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .two_inputs_row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .error_text {
+        font-size: 0.8rem;
+    }
+
+    .login_input {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .label_text {
+        white-space: nowrap;
+    }
+
+    .label_text,
+    .custom_option,
+    .login_input::placeholder {
+        font-size: 1rem;
+    }
+
+    .two_inputs_row {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 1350px) {
+    .promo_block_text {
+        font-size: 60px;
+        line-height: 75px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .promo_block_text {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 700px) {
+    .promo_block {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+        align-items: center;
+    }
+    .controlls_block_btns,
+    .controlls_text{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .promo_block_text {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .controlls_block_btns{
+        flex-direction: column;   
+    }
+}

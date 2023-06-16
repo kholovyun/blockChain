@@ -1,0 +1,60 @@
+.header_container{
+    background-color: transparent;
+    max-width: 1600px;
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 5em;
+    padding: 1em;
+    flex-direction: column;
+}
+
+
+.header_container_logobox{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logo_text{
+    font-size: 18px;
+    letter-spacing: 0.35em;
+    font-weight: 700;
+    margin: 0;
+}
+.logo_text_sub{
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+}
+.header_container_walletbox{
+    display: flex;
+    align-items: center;
+}
+.header_container_nav_menu{
+    align-items: center;
+    display: flex;
+}
+.nav_menu_list{
+    list-style: none;
+    display: none;
+    justify-content: space-between;
+}
+.nav_menu_list > li{
+    margin-right: 2em;
+}
+.nav_link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 901px) {
+    .header_container{
+        flex-direction: row;
+        gap: 0;
+    }
+    .nav_menu_list {
+        display: flex;
+    }
+}

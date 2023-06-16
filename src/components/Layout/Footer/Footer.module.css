@@ -1,0 +1,33 @@
+.footer_container{
+    background-color: rgba(52, 5, 48, 0.637);
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 7em;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+ 
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    animation: carouselAnimation 15s linear infinite;
+}
+  
+.carouse_iItem {
+    flex: 0 0 calc(100% / 3);
+    width: 100%;
+    height: 80%;
+    padding: 1em;
+    font-size: 25px;
+}
+  
+@keyframes carouselAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 3 * 2));
+    }
+}

@@ -1,0 +1,13 @@
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url("./assets/bg.jpg");
+    padding: 1% , 0;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .container{
+        padding: 0;
+    }
+}
